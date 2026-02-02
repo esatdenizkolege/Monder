@@ -36,3 +36,7 @@ Excel dosyasında değişiklik yaparsanız:
 1. `transfer_plan.xlsx` dosyasını güncelleyin.
 2. Terminalde şu komutu çalıştırın: `python convert_excel_to_js.py`
 3. Değişiklikleri git ile tekrar yükleyin (`git add data.js`, `git commit...`, `git push`).
+
+
+---
+*Son kontrol: 02.02.2026 23:56*
