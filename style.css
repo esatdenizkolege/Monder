@@ -1,0 +1,182 @@
+:root {
+    --primary-color: #2563eb;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --header-height: 60px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.app-header {
+    height: var(--header-height);
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.app-header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 24px;
+    /* Balance back button space */
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: -8px;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.list-view {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    background-color: var(--card-bg);
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.list-item:active {
+    background-color: #f1f5f9;
+}
+
+.list-item-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.list-item-subtitle {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.chevron {
+    color: #cbd5e1;
+}
+
+.detail-view {
+    padding: 16px;
+}
+
+.detail-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.doctor-avatar {
+    width: 64px;
+    height: 64px;
+    background-color: #e0e7ff;
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 auto 16px;
+}
+
+.doctor-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.doctor-city {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: left;
+}
+
+.info-item {
+    background-color: #f8fafc;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.info-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.info-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.note-box {
+    margin-top: 16px;
+    background-color: #fffbeb;
+    border: 1px solid #fcd34d;
+    color: #92400e;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
